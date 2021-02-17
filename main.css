@@ -13,21 +13,37 @@
 
 
 .kanban-board{
-    border:1px solid black;
-    border-radius:20px;
+    border:1px solid rgb(172, 170, 170);
+    border-radius:5px;
     margin:5px;
 
     /*Do: Modfy width and height*/
     width: 30%;
     height: 300px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1),
+    0 6px 20px 0 rgba(0, 0, 0, 0.11);
 }
 
 .kaban-board-name {
-    background-color: green;
-    display:block;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-    font-size:30px;
+    background-color: rgb(170, 172, 170);
+    border-radius: 5px 0 0 0;
+    text-align: start;
+    padding:5px;
+    font-weight: bolder;
+    color: rgb(39, 39, 39)
+}
+.to-do{
+    background-color:#87F1FF;
+}
+.doing {
+    background-color:#F4743B;
+}
+.finished {
+    background-color: #BEEE62;
+}
+.btn {
+    float:right;
+    cursor:pointer;
 }
 
 .task-list {
@@ -36,12 +52,11 @@
     padding:0;
 }
 .task-list li {
-    border:1px solid black;
+    border:1px solid rgb(172, 170, 170);
     border-radius:5px;
     padding:10px;
     margin:10px;
 }
-
-textarea {
-    border:none;
+.task-list li:hover{
+    border:solid 3px rgb(165, 162, 162);
 }
