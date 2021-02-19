@@ -13,19 +13,23 @@
                 To Do
                 <span class="btn">+</span>
             </header>
-            <ul class="task-list">
+            <ul class="task-list" ondragover="onDragOver(event);" ondrop="onDrop(event)">
                 <li id="drag1" draggable=true ondragstart="onDragStart(event)">Task 1</li>
-                <li id="drag2" draggable=true ondragstart="onDragStart(event)">Task 1</li>
+                <li id="drag2" draggable=true ondragstart="onDragStart(event)">Task 2</li>
             </ul>    
         </section> 
         <section class="kanban-board">
-            <header class="kaban-board-name doing">Doing</header>
-            <ul class="task-list dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event)"> 
+            <header class="kaban-board-name doing">
+                Doing
+            </header>
+            <ul class="task-list" ondragover="onDragOver(event);" ondrop="onDrop(event)"> 
             </ul>    
         </section>  
         <section class="kanban-board">
-            <header class="kaban-board-name finished">Finished</header>
-            <ul class="task-list">
+            <header class="kaban-board-name finished">
+                Finished
+            </header>
+            <ul class="task-list" ondragover="onDragOver(event);" ondrop="onDrop(event)">
                 <li>Task 1</li>
                 <li>Task 2</li>
             </ul>    
