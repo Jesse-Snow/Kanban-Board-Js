@@ -9,6 +9,7 @@
     flex-wrap:wrap;
     justify-content: center;
     align-items: stretch;
+    padding:40px 0px;
 }
 
 
@@ -55,12 +56,19 @@
     list-style-type: none;
     margin:0;
     padding:0;
+    height:300px;
 }
 .task-list li {
     border:1px solid rgb(172, 170, 170);
     border-radius:5px;
     padding:10px;
     margin:10px;
+    
+    /* Itens não selecionaveis */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .task-list li:hover{
     border:solid 3px rgb(165, 162, 162);

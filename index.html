@@ -13,16 +13,15 @@
                 To Do
                 <span class="btn">+</span>
             </header>
-            <ul class="to-do-container task-list">
-                <li><textarea></textarea></li>
+            <ul class="task-list">
+                <li id="drag1" draggable=true ondragstart="onDragStart(event)">Task 1</li>
                 <li>Task 2</li>
             </ul>    
         </section> 
         <section class="kanban-board">
             <header class="kaban-board-name doing">Doing</header>
-            <ul class="task-list">
-                <li>Task 1</li>
-                <li>Task 2</li>
+            <ul class="task-list dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event)"> 
+              
             </ul>    
         </section>  
         <section class="kanban-board">
@@ -33,5 +32,7 @@
             </ul>    
         </section>         
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
