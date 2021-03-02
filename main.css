@@ -18,7 +18,6 @@
     border-radius:5px;
     margin:5px;
 
-    /*Do: Modfy width and height*/
     width: 300px;
     height: 300px;
     box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1),
@@ -47,7 +46,7 @@
 .finished {
     background-color: #BEEE62;
 }
-.btn {
+#btn {
     float:right;
     cursor:pointer;
 }
@@ -73,4 +72,19 @@
 }
 .task-list li:hover{
     border:solid 3px rgb(165, 162, 162);
+}
+
+
+/* Estilo ao form */
+#input {
+    margin-left:15px;
+    margin-bottom:10px;
+    width: 90%;
+    height:50px;
+}
+#submit {
+    margin-left:15px;
+}
+#form {
+    margin-top:15px;
 }

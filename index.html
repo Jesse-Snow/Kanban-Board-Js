@@ -11,12 +11,15 @@
         <section class="kanban-board">
             <header class="kaban-board-name to-do">
                 To Do
-                <span class="btn">+</span>
+                <span id="btn" onclick="ShowForm()">+</span>
             </header>
-            <ul class="task-list" ondragover="onDragOver(event);" ondrop="onDrop(event)">
-                <li id="drag1" draggable=true ondragstart="onDragStart(event)">Task 1</li>
-                <li id="drag2" draggable=true ondragstart="onDragStart(event)">Task 2</li>
-            </ul>    
+            <ul class="task-list" ondragover="onDragOver(event);" ondrop="onDrop(event)" id="toDos">
+                <form id="form">
+                    <input type="text" name="task" id="input" placeholder="Botão direito remove task">
+                    <input type="submit" value="Enviar" id="submit">
+                    <input type="button" value="Cancel" id="cancel">
+                </form>
+            </ul>  
         </section> 
         <section class="kanban-board">
             <header class="kaban-board-name doing">
@@ -30,8 +33,6 @@
                 Finished
             </header>
             <ul class="task-list" ondragover="onDragOver(event);" ondrop="onDrop(event)">
-                <li>Task 1</li>
-                <li>Task 2</li>
             </ul>    
         </section>         
     </div>
