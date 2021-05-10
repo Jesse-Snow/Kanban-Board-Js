@@ -19,10 +19,11 @@ That is a project that i have interest in create
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
+[Preview](https://jesse-snow.github.io/Kanban-Board-Js)
 
 ### Built with
 
